@@ -1,22 +1,22 @@
-/* --- Recive Data from SpaceX API and calculate/display it--- */
+/* --- Receive Data from SpaceX API and calculate/display it--- */
 
 // URLs to access the API
 const allCrewURL = 'https://api.spacexdata.com/v4/crew';
-const nextLaunch = 'https://api.spacexdata.com/v4/launches/next';
-const allLaunches = 'https://api.spacexdata.com/v4/launches'
-const allLaunchpads = 'https://api.spacexdata.com/v4/launchpads'
-const allPayload = 'https://api.spacexdata.com/v4/payloads'
-const allCapsules = 'https://api.spacexdata.com/v4/capsules'
+const nextLaunchURL = 'https://api.spacexdata.com/v4/launches/next';
+const allLaunchesURL = 'https://api.spacexdata.com/v4/launches'
+const allLaunchpadsURL = 'https://api.spacexdata.com/v4/launchpads'
+const allPayloadURL = 'https://api.spacexdata.com/v4/payloads'
+const allCapsulesURL = 'https://api.spacexdata.com/v4/capsules'
 const roadstarURL = 'https://api.spacexdata.com/v4/roadster'
 
 //Call functions to retrive and display data
-getNextLaunchInformation(fetchData(nextLaunch));
-getAllLaunchData(fetchData(allLaunches));
-calculateTotalPayload(fetchData(allPayload));
-getCapsuleInformation(fetchData(allCapsules));
+getNextLaunchInformation(fetchData(nextLaunchURL));
+getAllLaunchData(fetchData(allLaunchesURL));
+calculateTotalPayload(fetchData(allPayloadURL));
+getCapsuleInformation(fetchData(allCapsulesURL));
 getRoadstarDistance(fetchData(roadstarURL));
 getCrewMembers(fetchData(allCrewURL));
-getLaunchpads(fetchData(allLaunchpads));
+getLaunchpads(fetchData(allLaunchpadsURL));
 
 /**
  * Given an API URL this function fetches the data from the API
