@@ -150,7 +150,7 @@ function displayPayload(totalMass) {
 
 
 /**
- * Recives Capsule Information and calculates the total amount of waterlandings and reused capsules. 
+ * Receives Capsule Information and calculates the total amount of waterlandings and reused capsules. 
  * Afterwards it sends these sums to the display functions
  * @param {Promise} capsules 
  */
@@ -211,7 +211,7 @@ function displayTotalReuse(reuse) {
 }
 
 /**
- * Recives Roadstar Information and extracts the current distance to mars, to then send it to the display function. 
+ * Receives Roadstar Information and extracts the current distance to mars, to then send it to the display function. 
  * @param {Promise} roadstarData 
  */
 function getRoadstarDistance(roadstarData) {
@@ -241,7 +241,7 @@ function displayRoadstarDistance(distance) {
 }
 
 /**
- * Recives the Crew Member Data and sends it to the display function one by one. 
+ * Receives the Crew Member Data and sends it to the display function one by one. 
  * @param {Promise} crewData 
  */
 function getCrewMembers(crewData) {
