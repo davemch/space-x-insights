@@ -7,4 +7,4 @@ been reused over time).
 
 The styling of the page is done mainly using bootstrap, with a little bit of css. 
 
-To run this application simply download all the files and open the index.html file using a local webserver like XAMPP. 
+To run this application go to: https://davemch.github.io/space-x-insights/
